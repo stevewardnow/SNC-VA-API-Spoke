@@ -14,7 +14,7 @@
         <license_model>none</license_model>
         <logo>1c1f5dc7470051108bbb21b2846d433b</logo>
         <menu/>
-        <name>VA API</name>
+        <name>VA API Spoke</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -29,9 +29,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-17 06:31:20</sys_created_on>
         <sys_id>401f990b470051108bbb21b2846d4397</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-17 06:31:22</sys_updated_on>
+        <sys_updated_on>2022-06-17 07:03:06</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>

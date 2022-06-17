@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD466ab987c3c051106cfc40b3b8fb83ea</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>401f990b470051108bbb21b2846d4397</scope_name>
+        <serialized_content>{"FlowDesigner:FD466ab987c3c051106cfc40b3b8fb83ea":{},"FlowDesigner:FD466ab987c3c051106cfc40b3b8fb83ea.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Facilities\",\"mandatory\":\"false\",\"uiUniqueId\":\"7a92a9bc-8b15-4699-8117-77ca1af1a92c\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD466ab987c3c051106cfc40b3b8fb83ea\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 08:30:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0a6ab98747c051108bbb21b2846d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD466ab987c3c051106cfc40b3b8fb83ea</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name>sys_complex_object_0a6ab98747c051108bbb21b2846d43ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 08:30:48</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
