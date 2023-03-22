@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>coordinates</field>
+        <name>latitude</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-22 01:08:37</sys_created_on>
+        <sys_id>252546ac47d899108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>latitude</sys_name>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="VA Facilities_etl_ihub">109a944047dc95108bbb21b2846d4362</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Source_x_snc_va_api_ihub_import_efdab33f47c895108bbb21b2846d43ac">d89a1c4047dc95108bbb21b2846d43af</sys_rte_eb_entity>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_252546ac47d899108bbb21b2846d43a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-22 01:08:37</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

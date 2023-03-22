@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_robust_import_set_transformer">
+    <sys_robust_import_set_transformer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_size>10</batch_size>
+        <description>RTE definition for VA Facilities</description>
+        <name>VA Facilities_rte_ihub</name>
+        <properties/>
+        <robust_transform_engine display_value="VA Facilities_etl_ihub">109a944047dc95108bbb21b2846d4362</robust_transform_engine>
+        <source_table>x_snc_va_api_ihub_import_efdab33f47c895108bbb21b2846d43ac</source_table>
+        <sys_class_name>sys_robust_import_set_transformer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 04:06:00</sys_created_on>
+        <sys_id>109a1c4047dc95108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VA Facilities_rte_ihub</sys_name>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name>sys_robust_import_set_transformer_109a1c4047dc95108bbb21b2846d43a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 04:06:00</sys_updated_on>
+        <verbose>false</verbose>
+    </sys_robust_import_set_transformer>
+</record_update>

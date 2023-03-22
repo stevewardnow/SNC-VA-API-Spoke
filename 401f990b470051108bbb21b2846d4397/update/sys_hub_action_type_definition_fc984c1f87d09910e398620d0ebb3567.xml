@@ -1,0 +1,2211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template>DATASTREAM</action_template>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>13db77fb47c895108bbb21b2846d431c</copied_from>
+        <copied_from_name>VA Facilities</copied_from_name>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>copy_of_va_facilities</internal_name>
+        <label_cache>[{"name":"{{action.bundle_ids}}","label":"action➛Bundle Ids","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.bundle_ids1}}","label":"action➛Bundle Ids","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"a582268a-3ae3-4650-81c9-49ed46fdd40d"}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Password (2 Way Encrypted)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"password2","isLocal":"true","uiUniqueId":"85c3cec0-1962-4057-9e0e-1e57408c1d81"}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection.variable_child1}}","label":"step➛JSON Parser step➛FeatureCollection➛variable_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection}}","label":"step➛JSON Parser step➛FeatureCollection","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7ba9b5472bc051107e4a1fc2c22ec5ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"c1ad50dd-37d7-4205-9b45-550ca0133e8f"}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.features}}","label":"step➛JSON Parser step➛root➛features","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.type}}","label":"step➛JSON Parser step➛root➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4ae577ae-ada5-45f0-9b75-2ddcdd5b63ec].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ae577ae-ada5-45f0-9b75-2ddcdd5b63ec].page_size}}","label":"step➛Script step➛Page Size","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8e8a20d1-5465-4231-bdd7-6b711b5a8811].queryParams}}","label":"step➛Pagination Setup step➛queryParams","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ae577ae-ada5-45f0-9b75-2ddcdd5b63ec].from}}","label":"step➛Script step➛from","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ae577ae-ada5-45f0-9b75-2ddcdd5b63ec].from_value}}","label":"step➛Script step➛from_value","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4ae577ae-ada5-45f0-9b75-2ddcdd5b63ec].additional_criteria}}","label":"step➛Script step➛additional_criteria","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f1ceb2fd-ca38-4c8b-9b04-04bcbc17b687].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Copy of VA Facilities</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc984c1f87d09910e398620d0ebb3567</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy of VA Facilities</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_fc984c1f87d09910e398620d0ebb3567</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fc984c1f87d09910e398620d0ebb3567</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:11:23</sys_created_on>
+        <sys_id>2369809f87d09910e398620d0ebb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{},"complexObjectSchema":{"FlowDesigner:FD9b69809f0cd09910f21d465d4cd867ad":{},"FlowDesigner:FD9b69809f0cd09910f21d465d4cd867ad.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"facilities\",\"mandatory\":\"false\",\"uiUniqueId\":\"e61b3438-8653-4a5d-9bb8-749ef5fd3fa7\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b69809f0cd09910f21d465d4cd867ad\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"12\",\"max_length\":\"0\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="facilities">1769809f87d09910e398620d0ebb35d5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fc984c1f87d09910e398620d0ebb3567</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>7d988c1f87d09910e398620d0ebb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <value/>
+        <variable display_value="ds_count">a1988c1f87d09910e398620d0ebb3517</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fc984c1f87d09910e398620d0ebb3567</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>b9988c1f87d09910e398620d0ebb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <value/>
+        <variable display_value="count">e5988c1f87d09910e398620d0ebb3512</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fc984c1f87d09910e398620d0ebb3567</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>f1988c1f87d09910e398620d0ebb35a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <value/>
+        <variable display_value="Page Count">2d988c1f87d09910e398620d0ebb350d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>fc984c1f87d09910e398620d0ebb3567</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>f5988c1f87d09910e398620d0ebb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <value/>
+        <variable display_value="Item Count">25984c1f87d09910e398620d0ebb35fb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>count</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>3d988c1f87d09910e398620d0ebb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ds_count</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>3d988c1f87d09910e398620d0ebb35a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ds_parsed_stream</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>79988c1f87d09910e398620d0ebb35a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value>{{step[c35f73c0-4b7b-4971-9039-ad001a7b1756].parsed_stream}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_code</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>fd988c1f87d09910e398620d0ebb35a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value>{{step[095d095e-262b-4da0-a0f2-ccdcb61296fe].error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>f1988c1f87d09910e398620d0ebb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value>{{step[095d095e-262b-4da0-a0f2-ccdcb61296fe].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>facilities</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>b1988c1f87d09910e398620d0ebb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>facilties</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:11:23</sys_created_on>
+        <sys_id>ab69809f87d09910e398620d0ebb35fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_count</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>b5988c1f87d09910e398620d0ebb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>page_count</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>75988c1f87d09910e398620d0ebb35a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_headers</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>fd988c1f87d09910e398620d0ebb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value>{{step[095d095e-262b-4da0-a0f2-ccdcb61296fe].response_headers}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>fc984c1f87d09910e398620d0ebb3567</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>79988c1f87d09910e398620d0ebb3595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</table>
+        <value>{{step[095d095e-262b-4da0-a0f2-ccdcb61296fe].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=fc984c1f87d09910e398620d0ebb3567^sys_idNOT IN01984c1f87d09910e398620d0ebb3571,01984c1f87d09910e398620d0ebb3576,05984c1f87d09910e398620d0ebb357d,91984c1f87d09910e398620d0ebb35e5,91984c1f87d09910e398620d0ebb35eb,99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>b6e647e0-bbb6-4d5a-959b-2560d8d61323</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Action Preprocessing</label>
+        <order>1</order>
+        <outputs/>
+        <section>DATASTREAM_PREPROCESS</section>
+        <step_type display_value="Action Preprocessing">235a47afcbfa2300a2fcb895634c9c04</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:39</sys_created_on>
+        <sys_id>01984c1f87d09910e398620d0ebb3571</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=01984c1f87d09910e398620d0ebb3571"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_235a47afcbfa2300a2fcb895634c9c04^id=01984c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=01984c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=01984c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=01984c1f87d09910e398620d0ebb3571"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_01984c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>da136161-e421-4ba1-96bd-990ad9edd6a9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Request</label>
+        <order>2</order>
+        <outputs/>
+        <section>DATASTREAM_REQUEST</section>
+        <step_type display_value="Request">21ba87afcbfa2300a2fcb895634c9c3d</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:40</sys_created_on>
+        <sys_id>01984c1f87d09910e398620d0ebb3576</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=01984c1f87d09910e398620d0ebb3576"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>01984c1f87d09910e398620d0ebb3576</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:40</sys_created_on>
+        <sys_id>c5984c1f87d09910e398620d0ebb357b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:40</sys_updated_on>
+        <value>rest_step</value>
+        <variable display_value="How will you get data">d61d64d677032300efb691572b10611a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_21ba87afcbfa2300a2fcb895634c9c3d^id=01984c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=01984c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=01984c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=01984c1f87d09910e398620d0ebb3576"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_01984c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>095d095e-262b-4da0-a0f2-ccdcb61296fe</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>3</order>
+        <outputs/>
+        <section>DATASTREAM_REQUEST</section>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:40</sys_created_on>
+        <sys_id>05984c1f87d09910e398620d0ebb357d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=05984c1f87d09910e398620d0ebb357d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>11984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Streaming">f1255aa377322300efb691572b106135</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>19984c1f87d09910e398620d0ebb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>1d984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"apiKey","value":"Yu7YobBQ05XMxvf8xj1zJ117TGJ384wV"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>55984c1f87d09910e398620d0ebb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>e3e7e5c7474051108bbb21b2846d43a5</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>59984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>91984c1f87d09910e398620d0ebb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>https://sandbox-api.va.gov/services/va_facilities/v0</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>95984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>/facilities/all</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>9d984c1f87d09910e398620d0ebb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>d1984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>d9984c1f87d09910e398620d0ebb35e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>05984c1f87d09910e398620d0ebb357d</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>dd984c1f87d09910e398620d0ebb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_05984c1f87d09910e398620d0ebb357d^id=05984c1f87d09910e398620d0ebb357d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=05984c1f87d09910e398620d0ebb357d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=05984c1f87d09910e398620d0ebb357d"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=05984c1f87d09910e398620d0ebb357d^sys_idNOT IN05984c1f87d09910e398620d0ebb3584"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=e365d0a8-caaf-459b-bd8d-44dd29a9c7a9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">05984c1f87d09910e398620d0ebb357d</model>
+        <model_id>05984c1f87d09910e398620d0ebb357d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_05984c1f87d09910e398620d0ebb357d</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:40</sys_created_on>
+        <sys_id>05984c1f87d09910e398620d0ebb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=05984c1f87d09910e398620d0ebb357d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_05984c1f87d09910e398620d0ebb357d^sys_idNOT IN51984c1f87d09910e398620d0ebb35d6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_05984c1f87d09910e398620d0ebb357d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:40</sys_created_on>
+        <sys_id>51984c1f87d09910e398620d0ebb35d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>7ede7d64-b7eb-47b4-bd62-ec69b9d85303</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parsing</label>
+        <order>4</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Parsing">1f1b8bafcbfa2300a2fcb895634c9c33</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>91984c1f87d09910e398620d0ebb35e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>91984c1f87d09910e398620d0ebb35e5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>11984c1f87d09910e398620d0ebb35ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>json_splitter</value>
+        <variable display_value="How will you identify each record">d52e2cd677032300efb691572b1061e4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>91984c1f87d09910e398620d0ebb35e5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>5d984c1f87d09910e398620d0ebb35e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>script_parser</value>
+        <variable display_value="How will you parse each item into an object">ae4eacd677032300efb691572b106156</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_1f1b8bafcbfa2300a2fcb895634c9c33^id=91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_91984c1f87d09910e398620d0ebb35e5"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>0c069b72-4931-4196-8ef6-b4b7f83834bf</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Splitter step</label>
+        <order>5</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Splitter">f4fe7504e713230007a64caac2f6a9d0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>91984c1f87d09910e398620d0ebb35eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>91984c1f87d09910e398620d0ebb35eb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>15984c1f87d09910e398620d0ebb35f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>JSON</value>
+        <variable display_value="Source Format">56c04e04e713230007a64caac2f6a9e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>91984c1f87d09910e398620d0ebb35eb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>d5984c1f87d09910e398620d0ebb35f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <value>$.features</value>
+        <variable display_value="Item Path">1d614244e713230007a64caac2f6a989</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_path</field>
+        <id>91984c1f87d09910e398620d0ebb35eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>91984c1f87d09910e398620d0ebb35f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>split_using</field>
+        <id>91984c1f87d09910e398620d0ebb35eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>1d984c1f87d09910e398620d0ebb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>stream</field>
+        <id>91984c1f87d09910e398620d0ebb35eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>dd984c1f87d09910e398620d0ebb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_f4fe7504e713230007a64caac2f6a9d0</table>
+        <value>{{step[095d095e-262b-4da0-a0f2-ccdcb61296fe].response_stream}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_91984c1f87d09910e398620d0ebb35eb"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action>
+        <cid>c35f73c0-4b7b-4971-9039-ad001a7b1756</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Script Parser step</label>
+        <order>6</order>
+        <outputs/>
+        <section>DATASTREAM_PARSING</section>
+        <step_type display_value="Script Parser">e83b26f68723230057a8ed4d87cb0b24</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>99984c1f87d09910e398620d0ebb35f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>99984c1f87d09910e398620d0ebb35f1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>59984c1f87d09910e398620d0ebb35f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:21</sys_updated_on>
+        <value>(function parse(inputs, outputs) {
+
+// Source item string is available in inputs.sourceItem.
+// Generate output by setting fields of outputs.targetObject.
+// 
+// The structure of outputs.targetObject corresponds to the
+// structure defined in the Data Stream Action output.
+// 
+// Optionally skip an item in the stream by setting
+// outputs.state = 'SKIP'
+//
+// JSON Example:
+// var item = JSON.parse(inputs.sourceItem);
+// outputs.targetObject.ffName = item.firstName;
+// outputs.targetObject.llName = item.lastName;
+// outputs.targetObject.address.home.city = item.address.home.city;
+//
+// XML Example: 
+// var xmlDoc = new XMLDocument2();
+// xmlDoc.parseXML(inputs.sourceItem);
+// var root = xmlDoc.getDocumentElement();
+// if (root.getNodeName() != 'user') {
+//     outputs.state = 'SKIP';
+//     return;
+// }
+// outputs.targetObject.id = xmlDoc.getNodeText('/user/id');
+// outputs.targetObject.fname = xmlDoc.getNodeText('/user/person/first_name');
+// outputs.targetObject.lname = xmlDoc.getNodeText('/user/person/last_name');
+
+var features = JSON.parse(inputs.sourceItem);
+outputs.targetObject = features;
+/*
+outputs.targetObject.id = features.properties.id;
+outputs.targetObject.name = features.properties.name;
+outputs.targetObject.facility_type = features.properties.facility_type;
+outputs.targetObject.classification = features.properties.classification;
+outputs.targetObject.website = features.properties.website;
+outputs.targetObject.time_zone = features.properties.time_zone;
+outputs.targetObject.phone = features.properties.phone;
+outputs.targetObject.hours = features.properties.hours;
+outputs.targetObject.operational_hours_special_instructions = features.properties.operational_hours_special_instructions;
+outputs.targetObject.wait_times = features.properties.wait_times;
+outputs.targetObject.mobile = features.properties.mobile;
+outputs.targetObject.active_status = features.properties.active_status;
+outputs.targetObject.operating_status = features.properties.operating_status;
+outputs.targetObject.visn = features.properties.visn;
+outputs.targetObject.latitude = features.geometry.coordinates[0]
+outputs.targetObject.longitude = features.geometry.coordinates[1];
+*/
+
+
+
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">688bea3e8723230057a8ed4d87cb0b05</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>99984c1f87d09910e398620d0ebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>d5984c1f87d09910e398620d0ebb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_e83b26f68723230057a8ed4d87cb0b24</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>split_stream</field>
+        <id>99984c1f87d09910e398620d0ebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>15984c1f87d09910e398620d0ebb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_e83b26f68723230057a8ed4d87cb0b24</table>
+        <value>{{step[0c069b72-4931-4196-8ef6-b4b7f83834bf].split_stream}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_99984c1f87d09910e398620d0ebb35f1"/>
+    <sys_hub_action_input action="delete_multiple" query="model=fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_hub_action_output action="delete_multiple" query="model=fc984c1f87d09910e398620d0ebb3567^sys_idNOT IN1769809f87d09910e398620d0ebb35d5,25984c1f87d09910e398620d0ebb35fb,29988c1f87d09910e398620d0ebb3520,2d988c1f87d09910e398620d0ebb350d,2d988c1f87d09910e398620d0ebb356c,61988c1f87d09910e398620d0ebb3568,6d988c1f87d09910e398620d0ebb351b,a1988c1f87d09910e398620d0ebb3517,a1988c1f87d09910e398620d0ebb3576,e1988c1f87d09910e398620d0ebb3525,e5988c1f87d09910e398620d0ebb3512,e5988c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD9b69809f0cd09910f21d465d4cd867ad,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=e61b3438-8653-4a5d-9bb8-749ef5fd3fa7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>facilties</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>facilities</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>12</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:11:22</sys_created_on>
+        <sys_id>1769809f87d09910e398620d0ebb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1769809f87d09910e398620d0ebb35d5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1769809f87d09910e398620d0ebb35d5"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_ad=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Item Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>25984c1f87d09910e398620d0ebb35fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25984c1f87d09910e398620d0ebb35fb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=25984c1f87d09910e398620d0ebb35fb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_output_page_variables</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ds_output_page_variables</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>29988c1f87d09910e398620d0ebb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=29988c1f87d09910e398620d0ebb3520"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=29988c1f87d09910e398620d0ebb3520"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_ad=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Page Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>2d988c1f87d09910e398620d0ebb350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2d988c1f87d09910e398620d0ebb350d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d988c1f87d09910e398620d0ebb350d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>2d988c1f87d09910e398620d0ebb356c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2d988c1f87d09910e398620d0ebb356c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d988c1f87d09910e398620d0ebb356c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>61988c1f87d09910e398620d0ebb3568</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=61988c1f87d09910e398620d0ebb3568"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=61988c1f87d09910e398620d0ebb3568"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>item</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>6d988c1f87d09910e398620d0ebb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6d988c1f87d09910e398620d0ebb351b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6d988c1f87d09910e398620d0ebb351b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>ds_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>a1988c1f87d09910e398620d0ebb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a1988c1f87d09910e398620d0ebb3517"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a1988c1f87d09910e398620d0ebb3517"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ds_parsed_stream</element>
+        <element_prototype display_value="Parsed Stream" element="parsed_stream" name="var__m_sys_flow_step_definition_output_e83b26f68723230057a8ed4d87cb0b24">b26ca2ba8763230057a8ed4d87cb0b5b</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ds_parsed_stream</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>11</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>a1988c1f87d09910e398620d0ebb3576</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a1988c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a1988c1f87d09910e398620d0ebb3576"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_headers</element>
+        <element_prototype display_value="Response Headers" element="response_headers" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">09d4cb7347622200b4fad7527c9a71e3</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_headers</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>e1988c1f87d09910e398620d0ebb3525</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e1988c1f87d09910e398620d0ebb3525"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e1988c1f87d09910e398620d0ebb3525"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>e5988c1f87d09910e398620d0ebb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e5988c1f87d09910e398620d0ebb3512"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e5988c1f87d09910e398620d0ebb3512"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,visible_in_fd=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_code</element>
+        <element_prototype display_value="Error Code" element="error_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">d1744b7347622200b4fad7527c9a7105</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</model>
+        <model_id>fc984c1f87d09910e398620d0ebb3567</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <next_element/>
+        <order>10</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>e5988c1f87d09910e398620d0ebb3571</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e5988c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e5988c1f87d09910e398620d0ebb3571"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=fc984c1f87d09910e398620d0ebb3567^sys_idNOT INb1988c1f87d09910e398620d0ebb35a8"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Copy of VA Facilities">fc984c1f87d09910e398620d0ebb3567</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:43</sys_created_on>
+        <sys_id>b1988c1f87d09910e398620d0ebb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:43</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b1988c1f87d09910e398620d0ebb35a8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567^sys_idNOT IN25988c1f87d09910e398620d0ebb3524,29988c1f87d09910e398620d0ebb3511,29988c1f87d09910e398620d0ebb3570,5369809f87d09910e398620d0ebb35d9,69988c1f87d09910e398620d0ebb351f,6d988c1f87d09910e398620d0ebb356b,a1988c1f87d09910e398620d0ebb3567,a5988c1f87d09910e398620d0ebb3500,ad988c1f87d09910e398620d0ebb351a,ad988c1f87d09910e398620d0ebb3579,e1988c1f87d09910e398620d0ebb3516,e1988c1f87d09910e398620d0ebb3575"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_output_page_variables</element>
+        <help/>
+        <hint/>
+        <label>ds_output_page_variables</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>25988c1f87d09910e398620d0ebb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>page_count</element>
+        <help/>
+        <hint/>
+        <label>Page Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>29988c1f87d09910e398620d0ebb3511</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>status_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>29988c1f87d09910e398620d0ebb3570</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>facilties</element>
+        <help/>
+        <hint/>
+        <label>facilities</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:11:22</sys_created_on>
+        <sys_id>5369809f87d09910e398620d0ebb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:11:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>item</element>
+        <help/>
+        <hint/>
+        <label>item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>69988c1f87d09910e398620d0ebb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>error_message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>6d988c1f87d09910e398620d0ebb356b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_headers</element>
+        <help/>
+        <hint/>
+        <label>response_headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>a1988c1f87d09910e398620d0ebb3567</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>item_count</element>
+        <help/>
+        <hint/>
+        <label>Item Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>a5988c1f87d09910e398620d0ebb3500</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_count</element>
+        <help/>
+        <hint/>
+        <label>ds_count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>ad988c1f87d09910e398620d0ebb351a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ds_parsed_stream</element>
+        <help/>
+        <hint/>
+        <label>ds_parsed_stream</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>ad988c1f87d09910e398620d0ebb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count</element>
+        <help/>
+        <hint/>
+        <label>count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:41</sys_created_on>
+        <sys_id>e1988c1f87d09910e398620d0ebb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_code</element>
+        <help/>
+        <hint/>
+        <label>error_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-30 05:07:42</sys_created_on>
+        <sys_id>e1988c1f87d09910e398620d0ebb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-30 05:07:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_fc984c1f87d09910e398620d0ebb3567"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=fc984c1f87d09910e398620d0ebb3567"/>
+</record_update>

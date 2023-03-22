@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="97368220471c99108bbb21b2846d4372" extends="sys_import_set_row" label="VA Facilities" max_length="40" name="x_snc_va_api_ihub_import_efdab33f47c895108bbb21b2846d43ac" type="collection">
+        <element attributes="import_attribute_name=data" label="data" max_length="64000" name="u_data" type="json"/>
+    </element>
+</database>
