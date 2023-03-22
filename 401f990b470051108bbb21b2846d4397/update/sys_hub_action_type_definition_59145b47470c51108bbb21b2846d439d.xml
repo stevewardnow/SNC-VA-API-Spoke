@@ -1,0 +1,2513 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>de69ed0b474051108bbb21b2846d4380</copied_from>
+        <copied_from_name>Get All Facilities</copied_from_name>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>get_facility_by_id</internal_name>
+        <label_cache>[{"name":"{{action.id}}","label":"action➛id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Password (2 Way Encrypted)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"password2","isLocal":"true","uiUniqueId":"85c3cec0-1962-4057-9e0e-1e57408c1d81"}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection.variable_child1}}","label":"step➛JSON Parser step➛FeatureCollection➛variable_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection}}","label":"step➛JSON Parser step➛FeatureCollection","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7ba9b5472bc051107e4a1fc2c22ec5ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"c1ad50dd-37d7-4205-9b45-550ca0133e8f"}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.features}}","label":"step➛JSON Parser step➛root➛features","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.type}}","label":"step➛JSON Parser step➛root➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>47bf538b474c51108bbb21b2846d4380</master_snapshot>
+        <name>Get Facility by ID</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59145b47470c51108bbb21b2846d439d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Get Facility by ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_59145b47470c51108bbb21b2846d439d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=59145b47470c51108bbb21b2846d439d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59145b47470c51108bbb21b2846d439d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>59145b47470c51108bbb21b2846d439d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:38</sys_created_on>
+        <sys_id>35149b47470c51108bbb21b2846d431a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:04:00</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDe1149b47cb0c511058a576ff45b59b00":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDe1149b47cb0c511058a576ff45b59b00.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"101fcb5a-fa4c-4f66-84f6-204cb70e7899\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe1149b47cb0c511058a576ff45b59b00\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">e9149b47470c51108bbb21b2846d4304</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>59145b47470c51108bbb21b2846d439d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:38</sys_created_on>
+        <sys_id>71149b47470c51108bbb21b2846d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">69149b47470c51108bbb21b2846d430f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>59145b47470c51108bbb21b2846d439d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:07:37</sys_created_on>
+        <sys_id>fe351fc7470c51108bbb21b2846d43b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:10:40</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDa6351fc7e80c5110d94ac6c0b637f97b":{},"FlowDesigner:FDa6351fc7e80c5110d94ac6c0b637f97b.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Facility\",\"mandatory\":\"false\",\"uiUniqueId\":\"917dfbf3-c854-448e-95a0-5a306a3de8b4\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa6351fc7e80c5110d94ac6c0b637f97b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{}}</value>
+        <variable display_value="Facility">22351fc7470c51108bbb21b2846d4383</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d^id=59145b47470c51108bbb21b2846d439d"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=59145b47470c51108bbb21b2846d439d^sys_idNOT INd1145b47470c51108bbb21b2846d43c9,ed145b47470c51108bbb21b2846d43f0"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</action>
+        <cid>964d5429-fab3-4150-b36f-4589f8b8ac72</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:36</sys_created_on>
+        <sys_id>d1145b47470c51108bbb21b2846d43c9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:10:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d1145b47470c51108bbb21b2846d43c9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>21145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:10:40</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>29145b47470c51108bbb21b2846d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>29145b47470c51108bbb21b2846d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>2d145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>https://sandbox-api.va.gov/services/va_facilities/v0</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>65145b47470c51108bbb21b2846d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>69145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a1145b47470c51108bbb21b2846d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a5145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:05:11</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e1145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d1145b47470c51108bbb21b2846d43c9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>ed145b47470c51108bbb21b2846d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <value>e3e7e5c7474051108bbb21b2846d43a5</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d1145b47470c51108bbb21b2846d43c9^id=d1145b47470c51108bbb21b2846d43c9"/>
+    <sys_element_mapping action="delete_multiple" query="id=d1145b47470c51108bbb21b2846d43c9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>21145b47470c51108bbb21b2846d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a9145b47470c51108bbb21b2846d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e5145b47470c51108bbb21b2846d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>61145b47470c51108bbb21b2846d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a5145b47470c51108bbb21b2846d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>6d145b47470c51108bbb21b2846d43e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>25145b47470c51108bbb21b2846d43e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:05:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"apiKey","value":"Yu7YobBQ05XMxvf8xj1zJ117TGJ384wV","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"id","value":"{{action.id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>d5145b47470c51108bbb21b2846d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e1145b47470c51108bbb21b2846d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>d1145b47470c51108bbb21b2846d43c9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>ad145b47470c51108bbb21b2846d43e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:10:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/facilities/{{action.id}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d1145b47470c51108bbb21b2846d43c9"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d1145b47470c51108bbb21b2846d43c9^sys_idNOT IN59145b47470c51108bbb21b2846d43d0"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=85c3cec0-1962-4057-9e0e-1e57408c1d81</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">d1145b47470c51108bbb21b2846d43c9</model>
+        <model_id>d1145b47470c51108bbb21b2846d43c9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d1145b47470c51108bbb21b2846d43c9</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:36</sys_created_on>
+        <sys_id>59145b47470c51108bbb21b2846d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1145b47470c51108bbb21b2846d43c9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d1145b47470c51108bbb21b2846d43c9^sys_idNOT IN59145b47470c51108bbb21b2846d43e1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d1145b47470c51108bbb21b2846d43c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>59145b47470c51108bbb21b2846d43e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</action>
+        <cid>a7b79ed1-fbab-4b42-85e3-7f47d92b2420</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>ed145b47470c51108bbb21b2846d43f0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:06:35</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ed145b47470c51108bbb21b2846d43f0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ed145b47470c51108bbb21b2846d43f0</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a1145b47470c51108bbb21b2846d43fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:06:26</sys_updated_on>
+        <value>{
+  "data": {
+    "id": "vha_688",
+    "type": "va_facilities",
+    "attributes": {
+      "name": "Washington VA Medical Center",
+      "facility_type": "va_health_facility",
+      "classification": "VA Medical Center (VAMC)",
+      "website": "http://www.washingtondc.va.gov",
+      "lat": 38.9311137,
+      "long": -77.0109110499999,
+      "time_zone": "America/New_York",
+      "address": {
+        "mailing": {
+          "zip": "20422-0001",
+          "city": "Washington",
+          "state": "DC",
+          "address_1": "50 Irving Street, Northwest",
+          "address_2": "Bldg 2",
+          "address_3": "Suite 7"
+        },
+        "physical": {
+          "zip": "20422-0001",
+          "city": "Washington",
+          "state": "DC",
+          "address_1": "50 Irving Street, Northwest",
+          "address_2": "Bldg 2",
+          "address_3": "Suite 7"
+        }
+      },
+      "phone": "1-800-827-1000",
+      "hours": "\"monday\": \"9:30AM-4:00PM\",",
+      "operational_hours_special_instructions": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "services": {
+        "other": [
+          "OnlineScheduling"
+        ],
+        "health": [
+          "Audiology"
+        ],
+        "benefits": [
+          "ApplyingForBenefits"
+        ],
+        "last_updated": "2018-01-01"
+      },
+      "satisfaction": {
+        "health": {
+          "primary_care_urgent": 0.85,
+          "primary_care_routine": 0.85,
+          "specialty_care_urgent": 0.85,
+          "specialty_care_routine": 0.85
+        },
+        "effective_date": "2018-01-01"
+      },
+      "wait_times": 10,
+      "mobile": false,
+      "active_status": "A",
+      "operating_status": "NORMAL",
+      "detailed_services": [
+        {
+          "name": "COVID-19 vaccines",
+          "description_facility": "null",
+          "appointment_leadin": "Your VA health care team will contact you if you???re eligible to get a vaccine during this time. As the supply of vaccine increases, we'll work with our care teams to let Veterans know their options.",
+          "appointment_phones": [
+            {
+              "extension": "71234",
+              "label": "Main phone",
+              "number": "937-268-6511",
+              "type": "tel"
+            }
+          ],
+          "online_scheduling_available": "True",
+          "referral_required": "False",
+          "walk_ins_accepted": "True",
+          "service_locations": [
+            {
+              "service_location_address": {
+                "building_name_number": "Baxter Building",
+                "clinic_name": "Baxter Clinic",
+                "wing_floor_or_room_number": "Wing East",
+                "address_line1": "50 Irving Street, Northwest",
+                "address_line2": "Bldg 2",
+                "city": "Washington",
+                "state": "DC",
+                "zip_code": "20422-0001",
+                "country_code": "US"
+              },
+              "appointment_phones": [
+                {
+                  "extension": "71234",
+                  "label": "Main phone",
+                  "number": "937-268-6511",
+                  "type": "tel"
+                }
+              ],
+              "email_contacts": [
+                {
+                  "email_address": "georgea@va.gov",
+                  "email_label": "George Anderson"
+                }
+              ],
+              "facility_service_hours": {
+                "Monday": "9AM-5PM",
+                "Tuesday": "9AM-5PM",
+                "Wednesday": "9AM-5PM",
+                "Thursday": "9AM-5PM",
+                "Friday": "9AM-5PM",
+                "Saturday": "Closed",
+                "Sunday": "Closed"
+              },
+              "additional_hours_info": "Location hours times may vary depending on staff availability"
+            }
+          ],
+          "path": "https://www.boston.va.gov/services/covid-19-vaccines.asp"
+        }
+      ],
+      "visn": "20"
+    }
+  }
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ed145b47470c51108bbb21b2846d43f0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>ed145b47470c51108bbb21b2846d43fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:06:35</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"data","children":[{"name":"id","children":[],"type":"string","jpath":"$.data.id","previewValue":"vha_688"},{"name":"type","children":[],"type":"string","jpath":"$.data.type","previewValue":"va_facilities"},{"name":"attributes","children":[{"name":"name","children":[],"type":"string","jpath":"$.data.attributes.name","previewValue":"Washington VA Medical Center"},{"name":"facility_type","children":[],"type":"string","jpath":"$.data.attributes.facility_type","previewValue":"va_health_facility"},{"name":"classification","children":[],"type":"string","jpath":"$.data.attributes.classification","previewValue":"VA Medical Center (VAMC)"},{"name":"website","children":[],"type":"string","jpath":"$.data.attributes.website","previewValue":"http://www.washingtondc.va.gov"},{"name":"lat","children":[],"type":"string","jpath":"$.data.attributes.lat","previewValue":"38.9311137"},{"name":"long","children":[],"type":"string","jpath":"$.data.attributes.long","previewValue":"-77.0109110499999"},{"name":"time_zone","children":[],"type":"string","jpath":"$.data.attributes.time_zone","previewValue":"America/New_York"},{"name":"address","children":[{"name":"mailing","children":[{"name":"zip","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.zip","previewValue":"20422-0001"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.state","previewValue":"DC"},{"name":"address_1","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_1","previewValue":"50 Irving Street, Northwest"},{"name":"address_2","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_2","previewValue":"Bldg 2"},{"name":"address_3","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_3","previewValue":"Suite 7"}],"type":"object","jpath":"$.data.attributes.address.mailing","previewValue":""},{"name":"physical","children":[{"name":"zip","children":[],"type":"string","jpath":"$.data.attributes.address.physical.zip","previewValue":"20422-0001"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.address.physical.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.address.physical.state","previewValue":"DC"},{"name":"address_1","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_1","previewValue":"50 Irving Street, Northwest"},{"name":"address_2","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_2","previewValue":"Bldg 2"},{"name":"address_3","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_3","previewValue":"Suite 7"}],"type":"object","jpath":"$.data.attributes.address.physical","previewValue":""}],"type":"object","jpath":"$.data.attributes.address","previewValue":""},{"name":"phone","children":[],"type":"string","jpath":"$.data.attributes.phone","previewValue":"1-800-827-1000"},{"name":"hours","children":[],"type":"string","jpath":"$.data.attributes.hours","previewValue":"\"monday\": \"9:30AM-4:00PM\","},{"name":"operational_hours_special_instructions","children":[],"type":"string","jpath":"$.data.attributes.operational_hours_special_instructions","previewValue":"Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m."},{"name":"services","children":[{"name":"other","children":[{"name":"other_string","children":[],"type":"string","jpath":"$.data.attributes.services.other[*]","previewValue":"OnlineScheduling"}],"type":"array.string","jpath":"$.data.attributes.services.other[*]","previewValue":""},{"name":"health","children":[{"name":"health_string","children":[],"type":"string","jpath":"$.data.attributes.services.health[*]","previewValue":"Audiology"}],"type":"array.string","jpath":"$.data.attributes.services.health[*]","previewValue":""},{"name":"benefits","children":[{"name":"benefits_string","children":[],"type":"string","jpath":"$.data.attributes.services.benefits[*]","previewValue":"ApplyingForBenefits"}],"type":"array.string","jpath":"$.data.attributes.services.benefits[*]","previewValue":""},{"name":"last_updated","children":[],"type":"string","jpath":"$.data.attributes.services.last_updated","previewValue":"2018-01-01"}],"type":"object","jpath":"$.data.attributes.services","previewValue":""},{"name":"satisfaction","children":[{"name":"health","children":[{"name":"primary_care_urgent","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.primary_care_urgent","previewValue":"0.85"},{"name":"primary_care_routine","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.primary_care_routine","previewValue":"0.85"},{"name":"specialty_care_urgent","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.specialty_care_urgent","previewValue":"0.85"},{"name":"specialty_care_routine","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.specialty_care_routine","previewValue":"0.85"}],"type":"object","jpath":"$.data.attributes.satisfaction.health","previewValue":""},{"name":"effective_date","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.effective_date","previewValue":"2018-01-01"}],"type":"object","jpath":"$.data.attributes.satisfaction","previewValue":""},{"name":"wait_times","children":[],"type":"string","jpath":"$.data.attributes.wait_times","previewValue":"10"},{"name":"mobile","children":[],"type":"string","jpath":"$.data.attributes.mobile","previewValue":"false"},{"name":"active_status","children":[],"type":"string","jpath":"$.data.attributes.active_status","previewValue":"A"},{"name":"operating_status","children":[],"type":"string","jpath":"$.data.attributes.operating_status","previewValue":"NORMAL"},{"name":"detailed_services","children":[{"name":"detailed_services_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].name","previewValue":"COVID-19 vaccines"},{"name":"description_facility","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].description_facility","previewValue":"null"},{"name":"appointment_leadin","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_leadin","previewValue":"Your VA health care team will contact you if you???re eligible to get a vaccine during this time. As the supply of vaccine increases, we'll work with our care teams to let Veterans know their options."},{"name":"appointment_phones","children":[{"name":"appointment_phones_object","children":[{"name":"extension","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].extension","previewValue":"71234"},{"name":"label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].label","previewValue":"Main phone"},{"name":"number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].number","previewValue":"937-268-6511"},{"name":"type","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].type","previewValue":"tel"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*]","previewValue":""},{"name":"online_scheduling_available","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].online_scheduling_available","previewValue":"True"},{"name":"referral_required","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].referral_required","previewValue":"False"},{"name":"walk_ins_accepted","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].walk_ins_accepted","previewValue":"True"},{"name":"service_locations","children":[{"name":"service_locations_object","children":[{"name":"service_location_address","children":[{"name":"building_name_number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.building_name_number","previewValue":"Baxter Building"},{"name":"clinic_name","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.clinic_name","previewValue":"Baxter Clinic"},{"name":"wing_floor_or_room_number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.wing_floor_or_room_number","previewValue":"Wing East"},{"name":"address_line1","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.address_line1","previewValue":"50 Irving Street, Northwest"},{"name":"address_line2","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.address_line2","previewValue":"Bldg 2"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.state","previewValue":"DC"},{"name":"zip_code","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.zip_code","previewValue":"20422-0001"},{"name":"country_code","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.country_code","previewValue":"US"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address","previewValue":""},{"name":"appointment_phones","children":[{"name":"appointment_phones_object","children":[{"name":"extension","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].extension","previewValue":"71234"},{"name":"label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].label","previewValue":"Main phone"},{"name":"number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].number","previewValue":"937-268-6511"},{"name":"type","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].type","previewValue":"tel"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*]","previewValue":""},{"name":"email_contacts","children":[{"name":"email_contacts_object","children":[{"name":"email_address","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*].email_address","previewValue":"georgea@va.gov"},{"name":"email_label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*].email_label","previewValue":"George Anderson"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*]","previewValue":""},{"name":"facility_service_hours","children":[{"name":"Monday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Monday","previewValue":"9AM-5PM"},{"name":"Tuesday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Tuesday","previewValue":"9AM-5PM"},{"name":"Wednesday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Wednesday","previewValue":"9AM-5PM"},{"name":"Thursday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Thursday","previewValue":"9AM-5PM"},{"name":"Friday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Friday","previewValue":"9AM-5PM"},{"name":"Saturday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Saturday","previewValue":"Closed"},{"name":"Sunday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Sunday","previewValue":"Closed"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours","previewValue":""},{"name":"additional_hours_info","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].additional_hours_info","previewValue":"Location hours times may vary depending on staff availability"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*]","previewValue":""},{"name":"path","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].path","previewValue":"https://www.boston.va.gov/services/covid-19-vaccines.asp"}],"type":"object","jpath":"$.data.attributes.detailed_services[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*]","previewValue":""},{"name":"visn","children":[],"type":"string","jpath":"$.data.attributes.visn","previewValue":"20"}],"type":"object","jpath":"$.data.attributes","previewValue":""}],"type":"object","jpath":"$.data","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ed145b47470c51108bbb21b2846d43f0^id=ed145b47470c51108bbb21b2846d43f0"/>
+    <sys_element_mapping action="delete_multiple" query="id=ed145b47470c51108bbb21b2846d43f0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>ed145b47470c51108bbb21b2846d43f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>6d145b47470c51108bbb21b2846d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>ed145b47470c51108bbb21b2846d43f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e5145b47470c51108bbb21b2846d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>ed145b47470c51108bbb21b2846d43f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>a9145b47470c51108bbb21b2846d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ed145b47470c51108bbb21b2846d43f0"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ed145b47470c51108bbb21b2846d43f0^sys_idNOT IN2ff457c7470c51108bbb21b2846d43b9"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDeff457c7e70c51107f203edc8fc78fb6,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=56c11502-686f-4a43-9d39-f645d51c20dd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">ed145b47470c51108bbb21b2846d43f0</model>
+        <model_id>ed145b47470c51108bbb21b2846d43f0</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ed145b47470c51108bbb21b2846d43f0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:06:35</sys_created_on>
+        <sys_id>2ff457c7470c51108bbb21b2846d43b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:06:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ed145b47470c51108bbb21b2846d43f0^sys_idNOT IN61145b47470c51108bbb21b2846d43fc"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>source_data</input_name>
+        <instance>ed145b47470c51108bbb21b2846d43f0</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"source_data":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>61145b47470c51108bbb21b2846d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ed145b47470c51108bbb21b2846d43f0^sys_idNOT INa3f457c7470c51108bbb21b2846d43be"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ed145b47470c51108bbb21b2846d43f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:06:35</sys_created_on>
+        <sys_id>a3f457c7470c51108bbb21b2846d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:06:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=59145b47470c51108bbb21b2846d439d^sys_idNOT INaa941b87470c51108bbb21b2846d43dd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=27ca1820-776e-4c20-86e9-f64819fc98ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</model>
+        <model_id>59145b47470c51108bbb21b2846d439d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_59145b47470c51108bbb21b2846d439d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:04:52</sys_created_on>
+        <sys_id>aa941b87470c51108bbb21b2846d43dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:04:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aa941b87470c51108bbb21b2846d43dd"/>
+    <sys_hub_action_output action="delete_multiple" query="model=59145b47470c51108bbb21b2846d439d^sys_idNOT IN22351fc7470c51108bbb21b2846d4383,69149b47470c51108bbb21b2846d430f,e9149b47470c51108bbb21b2846d4304"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa6351fc7e80c5110d94ac6c0b637f97b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=917dfbf3-c854-448e-95a0-5a306a3de8b4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>facility</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Facility</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</model>
+        <model_id>59145b47470c51108bbb21b2846d439d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:07:36</sys_created_on>
+        <sys_id>22351fc7470c51108bbb21b2846d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:07:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=22351fc7470c51108bbb21b2846d4383"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=22351fc7470c51108bbb21b2846d4383"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ebd609fe-126c-41ca-ae58-7c6e6c878ad1,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</model>
+        <model_id>59145b47470c51108bbb21b2846d439d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:38</sys_created_on>
+        <sys_id>69149b47470c51108bbb21b2846d430f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:07:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=69149b47470c51108bbb21b2846d430f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=69149b47470c51108bbb21b2846d430f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDe1149b47cb0c511058a576ff45b59b00,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=101fcb5a-fa4c-4f66-84f6-204cb70e7899</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</model>
+        <model_id>59145b47470c51108bbb21b2846d439d</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e9149b47470c51108bbb21b2846d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9149b47470c51108bbb21b2846d4304"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9149b47470c51108bbb21b2846d4304"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59145b47470c51108bbb21b2846d439d"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=59145b47470c51108bbb21b2846d439d^sys_idNOT IN75149b47470c51108bbb21b2846d431c"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:38</sys_created_on>
+        <sys_id>75149b47470c51108bbb21b2846d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:38</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=75149b47470c51108bbb21b2846d431c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_59145b47470c51108bbb21b2846d439d^sys_idNOT INae941b87470c51108bbb21b2846d43e2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>id</element>
+        <help/>
+        <hint/>
+        <label>id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_59145b47470c51108bbb21b2846d439d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:04:53</sys_created_on>
+        <sys_id>ae941b87470c51108bbb21b2846d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:04:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_59145b47470c51108bbb21b2846d439d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d^sys_idNOT IN26351fc7470c51108bbb21b2846d4387,65149b47470c51108bbb21b2846d4316,e9149b47470c51108bbb21b2846d4309"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>facility</element>
+        <help/>
+        <hint/>
+        <label>Facility</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:07:36</sys_created_on>
+        <sys_id>26351fc7470c51108bbb21b2846d4387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:07:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:38</sys_created_on>
+        <sys_id>65149b47470c51108bbb21b2846d4316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:02:37</sys_created_on>
+        <sys_id>e9149b47470c51108bbb21b2846d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:02:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_59145b47470c51108bbb21b2846d439d"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=59145b47470c51108bbb21b2846d439d^sys_idNOT IN04cf938b474c51108bbb21b2846d43a3"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"04cf938b474c51108bbb21b2846d43a3","name":"plan","plan_signature":null}}</plan>
+        <snapshot>abbf538b474c51108bbb21b2846d43fe</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04cf938b474c51108bbb21b2846d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:35</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_facility_by_id</internal_name>
+        <label_cache>[{"name":"{{action.id}}","label":"action➛id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Password (2 Way Encrypted)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"password2","isLocal":"true","uiUniqueId":"85c3cec0-1962-4057-9e0e-1e57408c1d81"}},{"name":"{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[996f3d93-b65d-483c-af3c-bcc705cc9a2c].__step_status__.message}}","label":"step➛JSON Parser step➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].variable}}","label":"step➛JSON Parser step➛variable","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection.variable_child1}}","label":"step➛JSON Parser step➛FeatureCollection➛variable_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].FeatureCollection}}","label":"step➛JSON Parser step➛FeatureCollection","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7ba9b5472bc051107e4a1fc2c22ec5ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"c1ad50dd-37d7-4205-9b45-550ca0133e8f"}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.features}}","label":"step➛JSON Parser step➛root➛features","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a7b79ed1-fbab-4b42-85e3-7f47d92b2420].root.type}}","label":"step➛JSON Parser step➛root➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Get Facility by ID</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Get Facility by ID">59145b47470c51108bbb21b2846d439d</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47bf538b474c51108bbb21b2846d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:31</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=47bf538b474c51108bbb21b2846d4380"/>
+    <sys_variable_value action="delete_multiple" query="document_key=47bf538b474c51108bbb21b2846d4380"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>47bf538b474c51108bbb21b2846d4380</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>2fbf538b474c51108bbb21b2846d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">2bbf538b474c51108bbb21b2846d43ed</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>47bf538b474c51108bbb21b2846d4380</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>a3bf538b474c51108bbb21b2846d43fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDa7bf538bf04c51103bcf65d8f0a28ebe":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDa7bf538bf04c51103bcf65d8f0a28ebe.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"101fcb5a-fa4c-4f66-84f6-204cb70e7899\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa7bf538bf04c51103bcf65d8f0a28ebe\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">a3bf538b474c51108bbb21b2846d43e8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>47bf538b474c51108bbb21b2846d4380</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>efbf538b474c51108bbb21b2846d43fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD2bbf538b664c5110b727e54bb6ef42c0":{},"FlowDesigner:FD2bbf538b664c5110b727e54bb6ef42c0.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD2bbf538b664c5110b727e54bb6ef42c0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Facility\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"65000\",\"uiUniqueId\":\"917dfbf3-c854-448e-95a0-5a306a3de8b4\"}"}},"serializationFormat":"JSON","complexObject":{}}</value>
+        <variable display_value="Facility">2bbf538b474c51108bbb21b2846d43f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380^id=47bf538b474c51108bbb21b2846d4380"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=47bf538b474c51108bbb21b2846d4380^sys_idNOT IN1fbf538b474c51108bbb21b2846d4396,93bf538b474c51108bbb21b2846d43af"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</action>
+        <cid>964d5429-fab3-4150-b36f-4589f8b8ac72</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>1fbf538b474c51108bbb21b2846d4396</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1fbf538b474c51108bbb21b2846d4396"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>13bf538b474c51108bbb21b2846d43ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>17bf538b474c51108bbb21b2846d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>https://sandbox-api.va.gov/services/va_facilities/v0</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>1bbf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>53bf538b474c51108bbb21b2846d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>5fbf538b474c51108bbb21b2846d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>9bbf538b474c51108bbb21b2846d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>9fbf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>d7bf538b474c51108bbb21b2846d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>e3e7e5c7474051108bbb21b2846d43a5</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1fbf538b474c51108bbb21b2846d4396</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>dbbf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1fbf538b474c51108bbb21b2846d4396^id=1fbf538b474c51108bbb21b2846d4396"/>
+    <sys_element_mapping action="delete_multiple" query="id=1fbf538b474c51108bbb21b2846d4396"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>13bf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>9bbf538b474c51108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>d7bf538b474c51108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>53bf538b474c51108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>97bf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>5fbf538b474c51108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>17bf538b474c51108bbb21b2846d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"apiKey","value":"Yu7YobBQ05XMxvf8xj1zJ117TGJ384wV","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"id","value":"{{action.id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>dbbf538b474c51108bbb21b2846d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>d3bf538b474c51108bbb21b2846d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>1fbf538b474c51108bbb21b2846d4396</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>9fbf538b474c51108bbb21b2846d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>/facilities/{{action.id}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1fbf538b474c51108bbb21b2846d4396"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1fbf538b474c51108bbb21b2846d4396^sys_idNOT IN5bbf538b474c51108bbb21b2846d439d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=85c3cec0-1962-4057-9e0e-1e57408c1d81</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">1fbf538b474c51108bbb21b2846d4396</model>
+        <model_id>1fbf538b474c51108bbb21b2846d4396</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1fbf538b474c51108bbb21b2846d4396</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>5bbf538b474c51108bbb21b2846d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1fbf538b474c51108bbb21b2846d4396"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1fbf538b474c51108bbb21b2846d4396^sys_idNOT IN1bbf538b474c51108bbb21b2846d43a1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_1fbf538b474c51108bbb21b2846d4396</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>1bbf538b474c51108bbb21b2846d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</action>
+        <cid>a7b79ed1-fbab-4b42-85e3-7f47d92b2420</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>93bf538b474c51108bbb21b2846d43af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=93bf538b474c51108bbb21b2846d43af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>93bf538b474c51108bbb21b2846d43af</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>27bf538b474c51108bbb21b2846d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>{
+  "data": {
+    "id": "vha_688",
+    "type": "va_facilities",
+    "attributes": {
+      "name": "Washington VA Medical Center",
+      "facility_type": "va_health_facility",
+      "classification": "VA Medical Center (VAMC)",
+      "website": "http://www.washingtondc.va.gov",
+      "lat": 38.9311137,
+      "long": -77.0109110499999,
+      "time_zone": "America/New_York",
+      "address": {
+        "mailing": {
+          "zip": "20422-0001",
+          "city": "Washington",
+          "state": "DC",
+          "address_1": "50 Irving Street, Northwest",
+          "address_2": "Bldg 2",
+          "address_3": "Suite 7"
+        },
+        "physical": {
+          "zip": "20422-0001",
+          "city": "Washington",
+          "state": "DC",
+          "address_1": "50 Irving Street, Northwest",
+          "address_2": "Bldg 2",
+          "address_3": "Suite 7"
+        }
+      },
+      "phone": "1-800-827-1000",
+      "hours": "\"monday\": \"9:30AM-4:00PM\",",
+      "operational_hours_special_instructions": "Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m.",
+      "services": {
+        "other": [
+          "OnlineScheduling"
+        ],
+        "health": [
+          "Audiology"
+        ],
+        "benefits": [
+          "ApplyingForBenefits"
+        ],
+        "last_updated": "2018-01-01"
+      },
+      "satisfaction": {
+        "health": {
+          "primary_care_urgent": 0.85,
+          "primary_care_routine": 0.85,
+          "specialty_care_urgent": 0.85,
+          "specialty_care_routine": 0.85
+        },
+        "effective_date": "2018-01-01"
+      },
+      "wait_times": 10,
+      "mobile": false,
+      "active_status": "A",
+      "operating_status": "NORMAL",
+      "detailed_services": [
+        {
+          "name": "COVID-19 vaccines",
+          "description_facility": "null",
+          "appointment_leadin": "Your VA health care team will contact you if you???re eligible to get a vaccine during this time. As the supply of vaccine increases, we'll work with our care teams to let Veterans know their options.",
+          "appointment_phones": [
+            {
+              "extension": "71234",
+              "label": "Main phone",
+              "number": "937-268-6511",
+              "type": "tel"
+            }
+          ],
+          "online_scheduling_available": "True",
+          "referral_required": "False",
+          "walk_ins_accepted": "True",
+          "service_locations": [
+            {
+              "service_location_address": {
+                "building_name_number": "Baxter Building",
+                "clinic_name": "Baxter Clinic",
+                "wing_floor_or_room_number": "Wing East",
+                "address_line1": "50 Irving Street, Northwest",
+                "address_line2": "Bldg 2",
+                "city": "Washington",
+                "state": "DC",
+                "zip_code": "20422-0001",
+                "country_code": "US"
+              },
+              "appointment_phones": [
+                {
+                  "extension": "71234",
+                  "label": "Main phone",
+                  "number": "937-268-6511",
+                  "type": "tel"
+                }
+              ],
+              "email_contacts": [
+                {
+                  "email_address": "georgea@va.gov",
+                  "email_label": "George Anderson"
+                }
+              ],
+              "facility_service_hours": {
+                "Monday": "9AM-5PM",
+                "Tuesday": "9AM-5PM",
+                "Wednesday": "9AM-5PM",
+                "Thursday": "9AM-5PM",
+                "Friday": "9AM-5PM",
+                "Saturday": "Closed",
+                "Sunday": "Closed"
+              },
+              "additional_hours_info": "Location hours times may vary depending on staff availability"
+            }
+          ],
+          "path": "https://www.boston.va.gov/services/covid-19-vaccines.asp"
+        }
+      ],
+      "visn": "20"
+    }
+  }
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>93bf538b474c51108bbb21b2846d43af</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>63bf538b474c51108bbb21b2846d43bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"data","children":[{"name":"id","children":[],"type":"string","jpath":"$.data.id","previewValue":"vha_688"},{"name":"type","children":[],"type":"string","jpath":"$.data.type","previewValue":"va_facilities"},{"name":"attributes","children":[{"name":"name","children":[],"type":"string","jpath":"$.data.attributes.name","previewValue":"Washington VA Medical Center"},{"name":"facility_type","children":[],"type":"string","jpath":"$.data.attributes.facility_type","previewValue":"va_health_facility"},{"name":"classification","children":[],"type":"string","jpath":"$.data.attributes.classification","previewValue":"VA Medical Center (VAMC)"},{"name":"website","children":[],"type":"string","jpath":"$.data.attributes.website","previewValue":"http://www.washingtondc.va.gov"},{"name":"lat","children":[],"type":"string","jpath":"$.data.attributes.lat","previewValue":"38.9311137"},{"name":"long","children":[],"type":"string","jpath":"$.data.attributes.long","previewValue":"-77.0109110499999"},{"name":"time_zone","children":[],"type":"string","jpath":"$.data.attributes.time_zone","previewValue":"America/New_York"},{"name":"address","children":[{"name":"mailing","children":[{"name":"zip","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.zip","previewValue":"20422-0001"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.state","previewValue":"DC"},{"name":"address_1","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_1","previewValue":"50 Irving Street, Northwest"},{"name":"address_2","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_2","previewValue":"Bldg 2"},{"name":"address_3","children":[],"type":"string","jpath":"$.data.attributes.address.mailing.address_3","previewValue":"Suite 7"}],"type":"object","jpath":"$.data.attributes.address.mailing","previewValue":""},{"name":"physical","children":[{"name":"zip","children":[],"type":"string","jpath":"$.data.attributes.address.physical.zip","previewValue":"20422-0001"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.address.physical.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.address.physical.state","previewValue":"DC"},{"name":"address_1","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_1","previewValue":"50 Irving Street, Northwest"},{"name":"address_2","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_2","previewValue":"Bldg 2"},{"name":"address_3","children":[],"type":"string","jpath":"$.data.attributes.address.physical.address_3","previewValue":"Suite 7"}],"type":"object","jpath":"$.data.attributes.address.physical","previewValue":""}],"type":"object","jpath":"$.data.attributes.address","previewValue":""},{"name":"phone","children":[],"type":"string","jpath":"$.data.attributes.phone","previewValue":"1-800-827-1000"},{"name":"hours","children":[],"type":"string","jpath":"$.data.attributes.hours","previewValue":"\"monday\": \"9:30AM-4:00PM\","},{"name":"operational_hours_special_instructions","children":[],"type":"string","jpath":"$.data.attributes.operational_hours_special_instructions","previewValue":"Normal business hours are Monday through Friday, 8:00 a.m. to 4:30 p.m."},{"name":"services","children":[{"name":"other","children":[{"name":"other_string","children":[],"type":"string","jpath":"$.data.attributes.services.other[*]","previewValue":"OnlineScheduling"}],"type":"array.string","jpath":"$.data.attributes.services.other[*]","previewValue":""},{"name":"health","children":[{"name":"health_string","children":[],"type":"string","jpath":"$.data.attributes.services.health[*]","previewValue":"Audiology"}],"type":"array.string","jpath":"$.data.attributes.services.health[*]","previewValue":""},{"name":"benefits","children":[{"name":"benefits_string","children":[],"type":"string","jpath":"$.data.attributes.services.benefits[*]","previewValue":"ApplyingForBenefits"}],"type":"array.string","jpath":"$.data.attributes.services.benefits[*]","previewValue":""},{"name":"last_updated","children":[],"type":"string","jpath":"$.data.attributes.services.last_updated","previewValue":"2018-01-01"}],"type":"object","jpath":"$.data.attributes.services","previewValue":""},{"name":"satisfaction","children":[{"name":"health","children":[{"name":"primary_care_urgent","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.primary_care_urgent","previewValue":"0.85"},{"name":"primary_care_routine","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.primary_care_routine","previewValue":"0.85"},{"name":"specialty_care_urgent","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.specialty_care_urgent","previewValue":"0.85"},{"name":"specialty_care_routine","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.health.specialty_care_routine","previewValue":"0.85"}],"type":"object","jpath":"$.data.attributes.satisfaction.health","previewValue":""},{"name":"effective_date","children":[],"type":"string","jpath":"$.data.attributes.satisfaction.effective_date","previewValue":"2018-01-01"}],"type":"object","jpath":"$.data.attributes.satisfaction","previewValue":""},{"name":"wait_times","children":[],"type":"string","jpath":"$.data.attributes.wait_times","previewValue":"10"},{"name":"mobile","children":[],"type":"string","jpath":"$.data.attributes.mobile","previewValue":"false"},{"name":"active_status","children":[],"type":"string","jpath":"$.data.attributes.active_status","previewValue":"A"},{"name":"operating_status","children":[],"type":"string","jpath":"$.data.attributes.operating_status","previewValue":"NORMAL"},{"name":"detailed_services","children":[{"name":"detailed_services_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].name","previewValue":"COVID-19 vaccines"},{"name":"description_facility","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].description_facility","previewValue":"null"},{"name":"appointment_leadin","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_leadin","previewValue":"Your VA health care team will contact you if you???re eligible to get a vaccine during this time. As the supply of vaccine increases, we'll work with our care teams to let Veterans know their options."},{"name":"appointment_phones","children":[{"name":"appointment_phones_object","children":[{"name":"extension","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].extension","previewValue":"71234"},{"name":"label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].label","previewValue":"Main phone"},{"name":"number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].number","previewValue":"937-268-6511"},{"name":"type","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*].type","previewValue":"tel"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].appointment_phones[*]","previewValue":""},{"name":"online_scheduling_available","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].online_scheduling_available","previewValue":"True"},{"name":"referral_required","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].referral_required","previewValue":"False"},{"name":"walk_ins_accepted","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].walk_ins_accepted","previewValue":"True"},{"name":"service_locations","children":[{"name":"service_locations_object","children":[{"name":"service_location_address","children":[{"name":"building_name_number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.building_name_number","previewValue":"Baxter Building"},{"name":"clinic_name","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.clinic_name","previewValue":"Baxter Clinic"},{"name":"wing_floor_or_room_number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.wing_floor_or_room_number","previewValue":"Wing East"},{"name":"address_line1","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.address_line1","previewValue":"50 Irving Street, Northwest"},{"name":"address_line2","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.address_line2","previewValue":"Bldg 2"},{"name":"city","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.city","previewValue":"Washington"},{"name":"state","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.state","previewValue":"DC"},{"name":"zip_code","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.zip_code","previewValue":"20422-0001"},{"name":"country_code","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address.country_code","previewValue":"US"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].service_location_address","previewValue":""},{"name":"appointment_phones","children":[{"name":"appointment_phones_object","children":[{"name":"extension","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].extension","previewValue":"71234"},{"name":"label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].label","previewValue":"Main phone"},{"name":"number","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].number","previewValue":"937-268-6511"},{"name":"type","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*].type","previewValue":"tel"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].appointment_phones[*]","previewValue":""},{"name":"email_contacts","children":[{"name":"email_contacts_object","children":[{"name":"email_address","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*].email_address","previewValue":"georgea@va.gov"},{"name":"email_label","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*].email_label","previewValue":"George Anderson"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].email_contacts[*]","previewValue":""},{"name":"facility_service_hours","children":[{"name":"Monday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Monday","previewValue":"9AM-5PM"},{"name":"Tuesday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Tuesday","previewValue":"9AM-5PM"},{"name":"Wednesday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Wednesday","previewValue":"9AM-5PM"},{"name":"Thursday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Thursday","previewValue":"9AM-5PM"},{"name":"Friday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Friday","previewValue":"9AM-5PM"},{"name":"Saturday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Saturday","previewValue":"Closed"},{"name":"Sunday","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours.Sunday","previewValue":"Closed"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*].facility_service_hours","previewValue":""},{"name":"additional_hours_info","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].service_locations[*].additional_hours_info","previewValue":"Location hours times may vary depending on staff availability"}],"type":"object","jpath":"$.data.attributes.detailed_services[*].service_locations[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*].service_locations[*]","previewValue":""},{"name":"path","children":[],"type":"string","jpath":"$.data.attributes.detailed_services[*].path","previewValue":"https://www.boston.va.gov/services/covid-19-vaccines.asp"}],"type":"object","jpath":"$.data.attributes.detailed_services[*]","previewValue":""}],"type":"array.object","jpath":"$.data.attributes.detailed_services[*]","previewValue":""},{"name":"visn","children":[],"type":"string","jpath":"$.data.attributes.visn","previewValue":"20"}],"type":"object","jpath":"$.data.attributes","previewValue":""}],"type":"object","jpath":"$.data","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_93bf538b474c51108bbb21b2846d43af^id=93bf538b474c51108bbb21b2846d43af"/>
+    <sys_element_mapping action="delete_multiple" query="id=93bf538b474c51108bbb21b2846d43af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>93bf538b474c51108bbb21b2846d43af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>efbf538b474c51108bbb21b2846d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>93bf538b474c51108bbb21b2846d43af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>6bbf538b474c51108bbb21b2846d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[964d5429-fab3-4150-b36f-4589f8b8ac72].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>93bf538b474c51108bbb21b2846d43af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>2fbf538b474c51108bbb21b2846d43bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=93bf538b474c51108bbb21b2846d43af"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=93bf538b474c51108bbb21b2846d43af^sys_idNOT IN1bbf538b474c51108bbb21b2846d43b4"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDdbbf538b444c51108e4ca1c857fce9b1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=56c11502-686f-4a43-9d39-f645d51c20dd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">93bf538b474c51108bbb21b2846d43af</model>
+        <model_id>93bf538b474c51108bbb21b2846d43af</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_93bf538b474c51108bbb21b2846d43af</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>1bbf538b474c51108bbb21b2846d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93bf538b474c51108bbb21b2846d43af^sys_idNOT INd3bf538b474c51108bbb21b2846d43ba"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>source_data</input_name>
+        <instance>93bf538b474c51108bbb21b2846d43af</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"source_data":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>d3bf538b474c51108bbb21b2846d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_93bf538b474c51108bbb21b2846d43af^sys_idNOT INd7bf538b474c51108bbb21b2846d43b8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_93bf538b474c51108bbb21b2846d43af</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>d7bf538b474c51108bbb21b2846d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=47bf538b474c51108bbb21b2846d4380^sys_idNOT IN97bf538b474c51108bbb21b2846d4383"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=27ca1820-776e-4c20-86e9-f64819fc98ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</model>
+        <model_id>47bf538b474c51108bbb21b2846d4380</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_47bf538b474c51108bbb21b2846d4380</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>97bf538b474c51108bbb21b2846d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=97bf538b474c51108bbb21b2846d4383"/>
+    <sys_hub_action_output action="delete_multiple" query="model=47bf538b474c51108bbb21b2846d4380^sys_idNOT IN2bbf538b474c51108bbb21b2846d43ed,2bbf538b474c51108bbb21b2846d43f4,a3bf538b474c51108bbb21b2846d43e8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ebd609fe-126c-41ca-ae58-7c6e6c878ad1,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</model>
+        <model_id>47bf538b474c51108bbb21b2846d4380</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>2bbf538b474c51108bbb21b2846d43ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2bbf538b474c51108bbb21b2846d43ed"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2bbf538b474c51108bbb21b2846d43ed"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD2bbf538b664c5110b727e54bb6ef42c0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=917dfbf3-c854-448e-95a0-5a306a3de8b4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>facility</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Facility</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</model>
+        <model_id>47bf538b474c51108bbb21b2846d4380</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>2bbf538b474c51108bbb21b2846d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2bbf538b474c51108bbb21b2846d43f4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2bbf538b474c51108bbb21b2846d43f4"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDa7bf538bf04c51103bcf65d8f0a28ebe,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=101fcb5a-fa4c-4f66-84f6-204cb70e7899</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</model>
+        <model_id>47bf538b474c51108bbb21b2846d4380</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>a3bf538b474c51108bbb21b2846d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a3bf538b474c51108bbb21b2846d43e8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a3bf538b474c51108bbb21b2846d43e8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=47bf538b474c51108bbb21b2846d4380"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=47bf538b474c51108bbb21b2846d4380^sys_idNOT INa3bf538b474c51108bbb21b2846d43fe"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Facility by ID">47bf538b474c51108bbb21b2846d4380</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>a3bf538b474c51108bbb21b2846d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a3bf538b474c51108bbb21b2846d43fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_47bf538b474c51108bbb21b2846d4380^sys_idNOT INdbbf538b474c51108bbb21b2846d4394"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>id</element>
+        <help/>
+        <hint/>
+        <label>id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_47bf538b474c51108bbb21b2846d4380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:32</sys_created_on>
+        <sys_id>dbbf538b474c51108bbb21b2846d4394</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_47bf538b474c51108bbb21b2846d4380"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380^sys_idNOT IN6bbf538b474c51108bbb21b2846d43ec,6bbf538b474c51108bbb21b2846d43f3,e3bf538b474c51108bbb21b2846d43f8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>6bbf538b474c51108bbb21b2846d43ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>6bbf538b474c51108bbb21b2846d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>facility</element>
+        <help/>
+        <hint/>
+        <label>Facility</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-17 15:53:33</sys_created_on>
+        <sys_id>e3bf538b474c51108bbb21b2846d43f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="VA API Spoke" source="x_snc_va_api">401f990b470051108bbb21b2846d4397</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="VA API Spoke">401f990b470051108bbb21b2846d4397</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-17 15:53:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_47bf538b474c51108bbb21b2846d4380"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>59145b47470c51108bbb21b2846d439d</sys_id>
+        <latest_snapshot>47bf538b474c51108bbb21b2846d4380</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4-05-25-2022_06-08-2022_0838.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
